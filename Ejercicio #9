@@ -1,1 +1,15 @@
+void main() {
 
+  print('Este programa devuelve la suma de todos sus elementos');
+  List<int> numeros = [1, 2, 3, 4, 5];
+  int suma = sumarNumeros(lista: numeros);
+  print('La suma de los números es: $suma');
+}
+
+int sumarNumeros({required List<int> lista}) {
+  int suma = 0;
+  for (int numero in lista) {
+    suma += numero;
+  }
+  return suma;
+}
