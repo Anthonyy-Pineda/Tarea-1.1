@@ -1,0 +1,14 @@
+void main() {
+  print('Este programa encuentra el número más pequeño en una lista');
+  List<int> numeros = [5, 3, 8, 1, 9, 2];
+  
+  int menor = numeros[0]; // Suponemos que el primer número es el más pequeño
+  
+  for (int numero in numeros) {
+    if (numero < menor) {
+      menor = numero;
+    }
+  }
+  
+  print('El número más pequeño en la lista es: $menor');
+}
