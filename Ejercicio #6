@@ -1,1 +1,20 @@
+void main() {
 
+  print('Este programa calcula el promedio de los elementos de una lista');
+  
+  List<int> numeros = [1, 2, 3, 4, 5];
+  
+  double promedio = calcularPromedio(numeros);
+  
+  print('El promedio de los números es: $promedio');
+}
+
+double calcularPromedio(List<int> lista) {
+  int suma = 0;
+
+  for (int numero in lista) {
+    suma += numero;
+  }
+
+  return suma / lista.length;
+}
