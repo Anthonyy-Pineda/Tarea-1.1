@@ -1,0 +1,15 @@
+void main() {
+
+  print('Este programa devuelve una lista con todos los elementos únicos de otra lista');
+  List<int> listaOriginal = [10, 20, 30, 40, 50, 20, 30, 60, 70, 80, 10];
+  List<int> listaUnica = [];
+
+  for (int elemento in listaOriginal) {
+    if (!listaUnica.contains(elemento)) {
+      listaUnica.add(elemento);
+    }
+  }
+
+  print('Elementos únicos de la lista original:');
+  print(listaUnica);
+}
