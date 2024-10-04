@@ -1,0 +1,13 @@
+void main() {
+
+  print('Este programa imprime los primeros 15 numeros de la sucesion de Fibonacci');
+  List<int> fibonacci = [0, 1];
+
+  for (int i = 2; i < 15; i++) {
+    int siguiente = fibonacci[i - 1] + fibonacci[i - 2];
+    fibonacci.add(siguiente);
+  }
+
+  print('Los primeros 15 números de la sucesión de Fibonacci son:');
+  print(fibonacci);
+}
