@@ -1,0 +1,13 @@
+void main() {
+
+  print('Este programa comprueba sin un numero es par o impar');
+  int numero1 = 6;
+
+  if (numero1%2 == 0) {
+    print('El numero $numero1 es par');
+  }
+  else{
+    print('El numero $numero1 es impar');
+  }
+
+}
